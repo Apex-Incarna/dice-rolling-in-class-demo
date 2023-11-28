@@ -13,8 +13,8 @@ public class DiceRolling {
         // We need a Random object when we roll dice
         Random rand = new Random();
         // Let's also define how many dice we have and how many faces each die has
-        final int NDICE = 1000;
-        final int NFACES = 100;
+        final int NDICE = 100;
+        final int NFACES = 10000;
         // *final* means that the program cannot change the value
         // use that for constants; and use identifiers with all capital letters
 
