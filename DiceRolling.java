@@ -33,20 +33,13 @@ public class DiceRolling {
         // Let's see the results using a Java utility class Arrays
         System.out.println(Arrays.toString(dieValues));
 
-        // Find the maximum value in the array
-        // Set the max value to the first value in the array
-        int maxValue = dieValues[0];
+        // We can use a Java method to sort an array
+        Arrays.sort(dieValues);
+        System.out.println(Arrays.toString(dieValues));
 
-        // Loop over each element in the array
-        // If the value of that element is larger, then set the max value
-        // to that new larger value; use a for-each loop
-        for (int value : dieValues) { // loop over each element and store in value
-            if (value > maxValue) {
-                maxValue = value;
-            }
-        }
-
-        // When the loop is done, print out the result
+        // Find the maximum value in the array, which when sorted will be the last value
+        // in the array
+        int maxValue = dieValues[dieValues.length - 1];
         System.out.println("The maximum value is " + maxValue);
 
         // Build a histogram
